@@ -51,4 +51,15 @@ function updateDisplay(){
     document.querySelector('.display').textContent = displayValue;
 }
 
+function clearDisplay(){
+    displayValue = '';
+    updateDisplay();
+}
+
+function setOperator(operator) {
+    displayValue += ' ' + operator + ' ';
+    updateDisplay();
+}
+
+
 updateDisplay();

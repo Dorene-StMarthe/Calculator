@@ -11,10 +11,10 @@
     <div class="calculator">
         <div class="display"></div>
         <div class = "operationsRow">
-            <button class="button"> + </button>
-            <button class="button"> - </button>
-            <button class="button"> * </button>
-            <button class="button"> / </button>
+            <button class="button" onclick="setOperator('+')"> + </button>
+            <button class="button"onclick="setOperator('-')"> - </button>
+            <button class="button" onclick="setOperator('*')"> * </button>
+            <button class="button" onclick="setOperator('/')"> / </button>
         </div>
         <div class = "btnRow">
             <button class="button" onclick="appendNumber('1')"> 1 </button>
@@ -31,8 +31,8 @@
         <div class = "btnRow">
             <button class="button" onclick="appendNumber('9')"> 9 </button>
             <button class="button" onclick="appendNumber('0')"> 0 </button>
-            <button class="button"> = </button>
-            <button class="button"> C </button>
+            <button class="button" onclick="calculate()"> = </button>
+            <button class="button" onclick="clearDisplay()"> C </button>
         </div>
     </div>
 
